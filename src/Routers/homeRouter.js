@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../Home/header';
 import News from '../Home/newsBox';
-import Quote from '../Home/Quotation';
+import Quote from '../Home/quotation';
 import SuggestionBox from '../Home/suggestionBox';
 import Footer from '../Home/footer';
 import data from '../Home/body.json';
@@ -17,8 +17,11 @@ import careerdata from '../Home/Career.json';
 import Contactus from '../ContactUs/CForm';
 import Donate from '../Home/Donate';
 import Signin from '../Login/loginForm';
+import AdminSignin from '../Login/adminSignin';
 import signup from '../Signup/Form';
-import Userhome from '../Routers/userRouting'
+import Userhome from '../Routers/userRouting';
+import AdminHome from '../Routers/adminRouting';
+import home1 from '../Routers/userRouting'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 const news = newsData.newsBox;
 function HomeRouter() {
@@ -27,7 +30,7 @@ function HomeRouter() {
     <Router>
       <Switch>
         <Route exact path="/" component={home} />
-        <Route exact path="/Home" component={home} />
+        <Route exact path="/Home" component={home1} />
         <Route exact path="/Vision" render={() => (<Vision data={visiondata} />)} />
         <Route exact path="/Volunteer" render={() => (<Volunteer data={volunteerdata} />)} />
         <Route exact path="/Blogs" render={() => (<Blogs data={blogdata} />)} />
@@ -39,6 +42,8 @@ function HomeRouter() {
         <Route exact path="/signin" render={() => (<Signin logged={setLogged} data={true} />)} />
         <Route exact path="/Membership" component={signup} />
         <Route exact path="/signin/userhome" render={() => logged ? <Userhome /> : (<Signin logged={setLogged} data={false} />)} />
+        <Route exact path="/Admin" render={() => (<AdminSignin logged={setLogged} data={true} />)} />
+        <Route  exact path="/Admin/AdminHome" render={() => logged ? <AdminHome /> : (<AdminSignin logged={setLogged} data={false} />)} />
       </Switch>
     </Router>
   )

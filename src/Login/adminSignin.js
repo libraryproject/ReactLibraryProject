@@ -2,7 +2,7 @@ import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField'
+import TextField from '@material-ui/core/TextField';
 import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
@@ -25,7 +25,7 @@ function Copyright() {
     </Typography>
   );
 }
-function LoginForm(props) {
+function AdminSignin(props) {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -113,7 +113,7 @@ const auth = () => {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
          />*/}
-          <Link to="/signin/userhome">
+          <Link to="/Admin/AdminHome">
             <Button
               type="submit"
               fullWidth
@@ -124,12 +124,14 @@ const auth = () => {
             >
               Sign In
           </Button></Link>
-          {!props.data && <h3 style={
-            {
-              "color": "red",
-              "textAlign": "center"
-            }
-          }>Wrong Credentials! Please check the username and password</h3>}
+          {
+              !props.data && <h3 style={
+                {
+                "color": "red",
+                "textAlign": "center"
+                }
+          }>Wrong Credentials! Please check the username and password</h3>
+          }
 
           <Grid container>
             <Grid item xs>
@@ -151,4 +153,4 @@ const auth = () => {
     </Container>
   );
 }
-export default LoginForm
+export default AdminSignin

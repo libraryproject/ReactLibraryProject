@@ -82,9 +82,7 @@ function Header(props) {
         
       </div>
 
-      {/* <img className="body"
-                    src="https://wallpaperaccess.com/full/16668.jpg"
-                    alt="read" /> */}
+  
     </>
     
   );

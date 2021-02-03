@@ -14,13 +14,13 @@ function UpdateBooks(){
 <br />
 <br />
      <p>
-     <Link to="/AdminHome/UpdateBooks/AddBooks">
+     <Link to="/Admin/UpdateBooks/AddBooks">
          <Button>AddBooks</Button><br /></Link>
          <br />
-         <Link to="/AdminHome/UpdateBooks/UpdateingBooks">
+         <Link to="/Admin/UpdateBooks/UpdateingBooks">
          <Button>UpdateBooks</Button><br /></Link>
          <br />
-         <Link to="/AdminHome/UpdateBooks/DeleteBooks">
+         <Link to="/Admin/UpdateBooks/DeleteBooks">
          <Button>DeleteBooks</Button><br /></Link>
          <br />
      </p>
