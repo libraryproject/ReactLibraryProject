@@ -12,8 +12,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { useState } from 'react';
 function Copyright() {
-
-
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
@@ -45,7 +43,7 @@ function LoginForm(props) {
 
 const auth = () => {
     if (password === "password") {
-      props.logged(true);
+      props.setLogged(true);
     }
   }
   const UseStyles = makeStyles((theme) => ({

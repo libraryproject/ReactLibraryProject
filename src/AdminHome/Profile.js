@@ -3,11 +3,8 @@ import axios from "axios";// npm i axios
 import "./Profile.css";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-
-
 const Pricing = () => {
   const [profileName, setProfileName] = useState("Name:  Kumar");
-
   const [profileCell, setProfileCell] = useState("Contact:  9393939399");
   const [profileImage, setProfileImage] = useState(
     "https://newcastlebeach.org/images/person-images.jpg"
@@ -42,7 +39,6 @@ const Pricing = () => {
       </Typography>
       </Toolbar>
       <div className="card">
-
         <img src={profileImage} style={{ width: "30%" }} />
         <h1>{profileName}</h1>
         <p className="title">{profileEmail}</p>

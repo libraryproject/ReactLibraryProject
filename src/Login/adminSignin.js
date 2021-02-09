@@ -45,7 +45,7 @@ function AdminSignin(props) {
 
 const auth = () => {
     if (password === "password") {
-      props.logged(true);
+      props.setLogged(true);
     }
   }
   const UseStyles = makeStyles((theme) => ({
