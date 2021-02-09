@@ -65,11 +65,9 @@ const FormSignup = ({ submitForm }) => {
           {errors.password2 && <p>{errors.password2}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
-          Sign up
+         Submit
         </button>
-        <span className='form-input-login'>
-          Already have an account? Login <a href='#'>here</a>
-        </span>
+      
       </form>
     </div>
   );

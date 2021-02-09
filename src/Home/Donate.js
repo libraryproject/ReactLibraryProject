@@ -1,8 +1,11 @@
 import React from "react";
 import "./Donate.css";
+import Header from './header';
 
 function Donate() {
   return (
+    <>
+    <Header />
     <div className="wrapper">
       <p>
         The Internet Archive is a US 501c3 non-profit organization. Our tax ID
@@ -95,32 +98,32 @@ function Donate() {
         <div className="logo">
           <img
             className="footer__albumLogo"
-            src="https://www.flaticon.com/svg/vstatic/svg/825/825488.svg?token=exp=1611293337~hmac=931f83c79f9c88ae148d978da8460b4a"
+            src="https://www.flaticon.com/svg/vstatic/svg/825/825454.svg?token=exp=1612415120~hmac=f9f429a6033f05af34966c5f824c7ffa"
             alt=""
           />
           <img
             className="footer__albumLogo"
-            src="https://www.flaticon.com/svg/vstatic/svg/825/825454.svg?token=exp=1611293134~hmac=567984811d598e41cf79a57ffb682fa4"
+            src="https://www.flaticon.com/svg/vstatic/svg/825/825488.svg?token=exp=1612415120~hmac=c920d2a80cfccb2b4194d56d4655cb54"
             alt=""
           />
           <img
             className="footer__albumLogo"
-            src="https://www.flaticon.com/svg/vstatic/svg/825/825466.svg?token=exp=1611293337~hmac=1a5cdd1ce9ca4e1c16f96174faad6b66"
+            src="https://www.flaticon.com/svg/vstatic/svg/825/825457.svg?token=exp=1612415120~hmac=e47aa197bc0cc48e1f5034baace3ad98"
             alt=""
           />
           <img
             className="footer__albumLogo"
-            src="https://www.flaticon.com/svg/vstatic/svg/825/825457.svg?token=exp=1611293337~hmac=c91918d0753ddd9bebec82c0d6a44b4d"
+            src="https://www.flaticon.com/svg/vstatic/svg/825/825510.svg?token=exp=1612416641~hmac=cbd6fb2b4c0a5fe247c836c889bb0f87"
             alt=""
           />
           <img
             className="footer__albumLogo"
-            src="https://www.flaticon.com/svg/vstatic/svg/825/825510.svg?token=exp=1611293452~hmac=b659a83316f046cb491d757ac1f93a7a"
+            src="https://www.flaticon.com/svg/vstatic/svg/825/825455.svg?token=exp=1612416673~hmac=4212fdba4fbe4aae11497c88026dad5e"
             alt=""
           />
         </div>
         <hr />
-
+ 
         <div>
           <h2>Other ways to donate</h2>
           <p>
@@ -151,6 +154,7 @@ function Donate() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

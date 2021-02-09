@@ -39,10 +39,10 @@ function HomeRouter() {
         <Route exact path="/Contact Us" component={Contactus} />
         <Route exact path="/Contactus" component={Contactus} />
         <Route exact path="/Donate" component={Donate} />
-        <Route exact path="/signin" render={() => (<Signin logged={setLogged} data={true} />)} />
+        <Route exact path="/signin" render={() => (<Signin setLogged={setLogged} data={true} />)} />
         <Route exact path="/Membership" component={signup} />
-        <Route exact path="/signin/userhome" render={() => logged ? <Userhome /> : (<Signin logged={setLogged} data={false} />)} />
-        <Route exact path="/Admin" render={() => (<AdminSignin logged={setLogged} data={true} />)} />
+        <Route exact path="/signin/userhome" render={() => logged ? <Userhome /> : (<Signin setLogged={setLogged} data={false} />)} />
+        <Route exact path="/Admin" render={() => (<AdminSignin setLogged={setLogged} data={true} />)} />
         <Route  exact path="/Admin/AdminHome" render={() => logged ? <AdminHome /> : (<AdminSignin logged={setLogged} data={false} />)} />
       </Switch>
     </Router>
